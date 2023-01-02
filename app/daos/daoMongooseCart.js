@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { MongooseContainer } = require("../container/ContainerMongoose");
+const { MongooseContainer } = require("../container/containerMongoose");
 
 const dtoCartScheme = new mongoose.Schema(
   {

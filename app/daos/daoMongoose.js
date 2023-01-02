@@ -1,6 +1,6 @@
 // DAO PRODUCTS
 const mongoose = require("mongoose");
-const { MongooseContainer } = require("../container/ContainerMongoose");
+const { MongooseContainer } = require("../container/containerMongoose");
 
 const dtoProductScheme = new mongoose.Schema(
   {
