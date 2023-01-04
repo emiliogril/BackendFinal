@@ -35,7 +35,7 @@ class CartController {
       res.redirect(`/products`);
     } catch (e) {
       httpError(res, e);
-      logger.error("Error al agregar producto.");
+      logger.error("ERROR adding product.");
     }
   };
 
@@ -46,7 +46,7 @@ class CartController {
       await this.service.deleteOneProduct(username, idProduct);
       res.redirect(`/cart`);
     } catch (err) {
-      logger.error("Error al eliminar un producto");
+      logger.error("Error Deleting one product");
     }
   };
 
@@ -56,7 +56,7 @@ class CartController {
       await this.service.deleteAllProductsFromCart(username);
       res.redirect(`/products`);
     } catch (err) {
-      logger.error("Error al comprar producto");
+      logger.error("Error Buying product");
     }
   };
 }

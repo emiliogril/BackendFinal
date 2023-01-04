@@ -4,6 +4,8 @@ const passport = require("passport");
 const bcrypt = require("bcrypt");
 const LocalStrategy = require("passport-local").Strategy;
 
+// const { containerUsers } = require("../main");
+// const imagenesPath = require('./config/paths.js');
 
 const DaoUsersMongoose = require("../daos/daoMongooseUsers");
 const daoUser = new DaoUsersMongoose();
@@ -18,7 +20,7 @@ passport.use(
       if (userFound) {
         return callback(null, false, { message: "USERNAME ALREADY IN USE" });
       }
-
+      //   const imagePath = path.join('/uploads', req.body.username + '.jpg');
       const passwordBcrypt = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
 
       const newUser = {
@@ -27,7 +29,7 @@ passport.use(
         password: passwordBcrypt,
         address: req.body.address,
         phone: req.body.phone,
-
+        // image: imagePath,
       };
 
       await daoUser.save(newUser);
