@@ -17,7 +17,7 @@
 ```
 ADMIN
 
-username= admin@sistema.com
+username= emiliogril@gmail.com
 password= admin
 
 /products/admin
@@ -37,7 +37,10 @@ PRODUCTOS
 /products/:id
 /products/category/:category
 
-EJ: products/category/Vodka
+Por ejemplo: 
+/products/category/Cerveza
+/products/category/Combo
+/products/category/Destinado
 ```
 
 ```
@@ -46,7 +49,7 @@ CHAT
 /chat
 /chat/:username
 
-EJ: /chat/:admin@sistema.com
+EJ: /chat/:emiliogmail@gmail.com
 ```
 
 ```

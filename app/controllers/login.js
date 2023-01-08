@@ -64,8 +64,8 @@ class UsersController {
         .sendMail({
           from: EMAIL,
           to: username,
-          html: `<h1>Welcome ${req.body.username}. Thank u for registering!</h1> <br> <p> Dear ${req.body.username}. We are happy to have you here with us! SHOP online 24hs. </p>`,
-          subject: "New User",
+          html: `<h1>Bienvenido ${req.body.username}. ¡Gracias por registrarte!</h1> <br> <p> Dear ${req.body.username}. We are happy to have you here with us! SHOP online 24hs. </p>`,
+          subject: "Nuevo Usuario",
         })
         .then((result) => {
           console.log(result);
