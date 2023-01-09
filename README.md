@@ -18,7 +18,7 @@
 ADMIN
 
 username= emiliogril@gmail.com
-password= admin
+password= emilio
 
 /products/admin
 /order
